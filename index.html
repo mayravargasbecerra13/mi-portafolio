@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi portafolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- menu encabezado -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Mayra</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+    <!--seccion inicio-->
+    <section id="inicio" class="inicio">
+      <div class="contenedor-banner">
+        <div class="contenedor-img">
+          <img src="img-portafolio/foto-cv.png" alt="Fto perfil" />
+        </div>
+        <h1>MAYRA VARGAS</h1>
+        <h2>Web Master - Experta HTML/CSS</h2>
+
+        <div class="redes">
+          <a href="https://www.facebook.com/profile.php?id=100009249527361"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/MayraVarga39345"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/mayra-vargas-5022ab209/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+      </div>
+    </section>
+    <!--seccion sobre mi-->
+    <section id="sobremi" class="sobremi">
+      <div class="contenedor-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, soy Mayra Vargas.</span>
+          Soy una persona positiva y optimista, dispuesta al aprendizaje y la
+          superación personal, con sentido de pertenencia. Responsable, amable,
+          me gusta ser colaboradora y sobre todo conservar un ambiente laboral
+          agradable con buena disposición. Cuento con excelentes relaciones
+          interpersonales y facilidad para trabajar en grupo, responsable,
+          atenta, respetuosa y dedicada a mis ocupaciones diarias.
+        </p>
+        <div class="fila">
+          <!--datos personales-->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                21-08-1996
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                3138661775
+              </li>
+              <li>
+                <strong>Email</strong>
+                vargasmayra800@gmail.com
+              </li>
+              <li>
+                <strong>Web site</strong>
+                www.example.com
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Car 5 # 20 - 61 Duitama-Boyacá
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>WEB MASTER</span>
+              </li>
+            </ul>
+          </div>
+          <!--intereses-->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-dumbbell"></i>
+                <span>GYM</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-sharp fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LIBROS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-film"></i>
+                <span>CINE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-motorcycle"></i>
+                <span>MOTOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          Descargas CV <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+    <!--seccion skills-->
+    <section class="skills" id="skills">
+      <div class="contenedor-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!--technical Skill-->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Photoshop</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Illustrator</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Wordpress</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Drupal</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--profesional skills-->
+          <div class="col">
+            <h3>Profesional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Colaboración</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--seccion curriculum-->
+    <secction class="curriculum" id="curriculum">
+      <div class="contenedor-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Photoshop y Ilustrator</h4>
+              <span class="casa">Platzi</span>
+              <span class="fecha">2019 - 2020</span>
+              <p></p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Html & css</h4>
+              <span class="casa">Coderhouse</span>
+              <span class="fecha">2020 - 2021</span>
+              <p>Creación de sitios Web</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Wordpress & Drupal</h4>
+              <span class="casa">Platzi</span>
+              <span class="fecha">2020 - 2021</span>
+              <p>Creación y optimización de sitios web.</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>Administradora de contenido</h4>
+              <span class="casa">Reedso</span>
+              <span class="fecha">2020 - 2021</span>
+              <p>
+                Tareas realizadas: Manejo y publicación del Contenido en redes
+                sociales, administración de catálogos virtuales en prestashop,
+                publicación de contenido en plataformas wordpress, maquetación
+                de mails y landings pequeños para campañas
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Community manager</h4>
+              <span class="casa">Disarq Constructora</span>
+              <span class="fecha">2019 - 2020</span>
+              <p>Manejas y publicación del Contenido en redes sociales</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Web Master Freelance</h4>
+              <span class="casa">Igloo-Lab</span>
+              <span class="fecha">2021 - 2023</span>
+              <p>
+                Administracion de contenido, maquetacion de emails y landings
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </secction>
+    <!--seccion portfolio-->
+    <section class="portfolio" id="portfolio">
+      <div class="contenedor-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img-portafolio/ehubf1.png" alt="proyecto" />
+            <div class="overlay">
+              <h3>Desarrollo pagina web</h3>
+              <p>Ehub</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img-portafolio/ehubf2.png" alt="proyecto" />
+            <div class="overlay">
+              <h3>Desarrollo pagina web</h3>
+              <p>Ehub</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img-portafolio/maquetacion-mailf1.png" alt="proyecto" />
+            <div class="overlay">
+              <h3>Maquetación de mail</h3>
+              <p>Maquetación</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img-portafolio/web-medplatformf1.png" alt="proyecto" />
+            <div class="overlay">
+              <h3>Desarrollo pagina web</h3>
+              <p>Medflatform</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--seccion contacto-->
+    <section class="contacto" id="contacto">
+      <div class="contenedor-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!--FORMULARIO-->
+          <div class="col">
+            <input type="text" placeholder="Tú Nombre" />
+            <input type="text" placeholder="Número Telefónico" />
+            <input type="text" placeholder="Dirección de correo" />
+            <input type="text" placeholder="Tema" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <button>
+              Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+          <!--MAPA-->
+          <div class="col">
+            <img src="img-portafolio/mapa.png" alt="Mapa Duitama" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-sharp fa-solid fa-location-dot"></i>
+                  Duitama-Boyacá
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  Llamar: 3138661775
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: vargasmayra800@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--FOOTER-->
+    <footer class="footer" id="footer">
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="https://www.facebook.com/profile.php?id=100009249527361"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="https://twitter.com/MayraVarga39345"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/mayra-vargas-5022ab209/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="#"><i class="fa-solid fa-rss"></i></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
