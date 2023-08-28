@@ -39,3 +39,8 @@ function efectoHabildades() {
 window.onscroll = function () {
   efectoHabildades();
 };
+
+document.getElementById("open-pdf").addEventListener("click", function () {
+  var pdfFile = "mayra-cv.pdf"; // Reemplaza con la ruta de tu archivo PDF
+  window.open(pdfFile, "_blank");
+});

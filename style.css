@@ -156,6 +156,11 @@ html{
     font-weight: bold;
     border-radius: 5px;
 }
+.sobremi .fila .col li a{
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
 .sobremi .fila .col .contenedor-intereses{
     display: flex;
     flex-wrap: wrap;
@@ -385,6 +390,7 @@ html{
 .curriculum .fila .derecha{
     border-left: 2px solid #252A2E;
 }
+
 .curriculum .fila .item{
     padding: 25px;
     margin-bottom: 30px;
@@ -599,6 +605,11 @@ html{
     display: inline-block;
     margin-right: 20px;
 
+}.contacto .col .info li a{
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    
 }
 /*FOOTER*/
 footer{
