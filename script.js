@@ -41,6 +41,6 @@ window.onscroll = function () {
 };
 
 document.getElementById("open-pdf").addEventListener("click", function () {
-  let pdfFile = "mayra-cv.pdf";
+  let pdfFile = "mayra-cv_compressed.pdf";
   window.open(pdfFile, "_blank");
 });
